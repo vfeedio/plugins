@@ -3,4 +3,4 @@
 
 
 VERSION = "ALPHA"
-D2SEC_PATH = "/Users/dev/Documents/dev/api/third_party/d2sec/"
+D2SEC_PATH = "YOUR_ELLIOT_REPOSITORY"
