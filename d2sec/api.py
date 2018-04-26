@@ -51,14 +51,12 @@ class api(object):
         return self.req.text
 
     def set_target(self, target):
-        """checking the version"""
+        """Set the target and return the list"""
 
-        payload = {'url': target, 'proxy': ''}
-        self.req = self.session.post('http://127.0.0.1:8080/api/kb/websites/new', data=payload)
-        return self.req.text
+        data = '{"url":target}'
+        headers = {'Content-type': 'application/json'}
 
-    def get_target(self):
-        """retrieve the targets"""
-
+        self.req = self.session.post('http://127.0.0.1:8080/api/kb/websites/new', data=data, headers=headers)
         self.req = self.session.get("http://127.0.0.1:8080/api/kb/websites/")
+
         return self.req.text
