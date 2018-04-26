@@ -9,8 +9,7 @@ With this first beta release, the `d2sec plugin` comes with few methods:
 * **version()** : returns the framework version
 * **get_exploits()** : retrieves the list of all available exploit
 * **get_sessions()** : enumerates the valid sessions whenever an exploit succeeded.
-* **set_target()** : sets the target to be exploited
-* **get_target()** : retrieves the available targets
+* **set_target()** : sets and lists the target to be exploited
 
 
 ### CMD usage
@@ -47,5 +46,3 @@ and with a target (case of set_target)
         # setting the target
         api_class().set_target(target)
 
-        # retrieve available targets
-        print(api_class().get_target())
